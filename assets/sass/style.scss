@@ -1,0 +1,24 @@
+/* abstracts */
+@import 'abstracts/variables';
+@import 'abstracts/overlay';
+
+
+/* base */
+
+@import 'base/animation';
+@import 'base/button';
+@import 'base/reset';
+@import 'base/section';
+
+/* components */
+
+@import 'components/partner';
+@import 'components/new';
+@import 'components/product';
+@import 'components/slider';
+
+/* layout */
+
+@import 'layouts/header';
+@import 'layouts/form';
+@import 'layouts/footer';
