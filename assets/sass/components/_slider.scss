@@ -96,11 +96,18 @@
 @media (max-width: 1600px){
 
 }
-@media (max-width: 1400px){
-
+@media (max-width: 1440px){
+    .slider__data{
+        margin: 0 -85px 0 -45px;
+    }
+    .header-bottom__search {
+        width: 570px !important;
+    }
 }
 @media (max-width: 1366px){
-    
+    .slider__data{
+        margin: 0 -85px 0 0px;
+    }
 }
 @media (max-width: 1280px){
     .header-bottom__search{
@@ -110,7 +117,7 @@
         margin: 0 -85px 0 0px;
     }
 }
-@media (max-width: 1024px){
+@media (max-width: 992px){
     .header-bottom__search{
         width: 338px !important;
     }
