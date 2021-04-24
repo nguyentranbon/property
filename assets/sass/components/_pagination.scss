@@ -27,3 +27,14 @@
         }
     }
 }
+@media (max-width: 576px){
+    .hazo-pagination{
+        ul{
+            li{
+                a{
+                    padding: 3px 12px;
+                }
+            }
+        }
+    }
+}

@@ -15,5 +15,11 @@
         height: 114px;
         display: block;
     }
-
+}
+@media (max-width: 992px){
+    .partner{
+        &__title{
+            font-size: 14px;
+        }
+    }
 }

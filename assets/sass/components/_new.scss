@@ -92,7 +92,19 @@
         }
         &-post{
             &__title{
+                font-size: 12px;
                 padding: unset;
+            }
+        }
+        &-construction{
+            &__title{
+                font-size: 12px;
+                padding: unset;
+            }
+            &__link{
+                &-more{
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -119,12 +131,5 @@
                 grid-template-columns: 1fr 2fr;
             }
         }
-    }
-}
-
-@media (max-width: 568px){
-    .new-post__title{
-        height: 50px;
-        overflow: hidden;
     }
 }

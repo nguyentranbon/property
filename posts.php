@@ -1,35 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property</title>
-    <!-- Link Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-    <!-- Link Carousel -->
-    <link rel="stylesheet" href="assets/carousel/flickity.css">
-    <!-- Link css-->
-    <link rel="stylesheet" href="assets/sass/style.css">
-    <!-- Link font -->
-</head>
-<body>
-    <main>
+<?php
+    include 'header.php';
+?>
+    <main class="wrapper-content">
         <section class="post">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-9 col-md-12">
-                        <nav aria-label="breadcrumbs" class="rank-math-breadcrumb">
-                            <p>
-                              <a href="index.php">Trang chủ</a>
-                              <span class="separator">»</span>
-                              <span class="last">Tin tức - Sự kiện</span>
-                            </p>
-                        </nav>
+                    <div class="col-xl-9 col-md-12 no-gutters-col">
+                        <?php include 'layouts/breadcrumb.php' ?>
                         <div class="wrapper">
-                            <h1 class="post-detail__title"> Vertu là một phụ kiện vô cùng chất với đàn ông thành đạt</h1>
-                            <div class="news-detail-inner ws-sgct">
-                                
+                            <h1 class="section__title section__title-cate">
+                                <div class="section__tab text-uppercase">Tin tức</div>
+                            </h1>
+                            <?php
+                                for ($i=0; $i < 6; $i++) { 
+                                    echo '
+                                    <div class="post__item">
+                                        <a href="#" class="post__item-img">
+                                            <img src="assets/images/gach-Dong-Tam-loai-2-2-444x444.jpg" alt="">
+                                        </a>
+                                        <div class="post__item-content">
+                                            <a href="#" class="post__item-title">Cách phân biệt gạch Đồng Tâm loại 2 với loại 1 (Gạch Đồng Tâm A và AA)</a>
+                                            <p class="post__item-desc">
+                                                Trên thị trường hiện nay, thương hiệu Đồng Tâm cung cấp 2 loại gạch là gạch Đồng Tâm loại 2 và loại 1 (loại A và AA) với những điểm khác biệt đáng kể. Tuy nhiên,...
+                                            </p>
+                                        </div>
+                                    </div>
+                                    ';
+                                }
+                            ?>
+                            <div class="hazo-pagination">
+                                <ul>
+                                  <li><a href=""><</a></li>
+                                  <li class="active"><a href="">1</a>
+                                  </li>
+                                  <li><a href="">2</a></li>
+                                  <li><a href="">3</a></li>
+                                  <li><a href="">></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -81,42 +88,6 @@
                                     </li>
                                 </ul>
                             </div>
-
-                            <div class="sidebar__item">
-                                <div class="sidebar__title">Bài viết liên quan</div>
-                                <ul class="sidebar__list sidebar__list-post">
-                                    <li>
-                                        <div class="sidebar__list-post__item">
-                                            <a href="#" class="sidebar__list-post__img">
-                                                <img src="assets/images/ban-da-lavabo.jpg" alt="">
-                                            </a>
-                                            <div class="sidebar__list-post__title">
-                                                <a href="#">20+ Mẫu bàn đá lavabo – chậu rửa mặt bàn đá không bao giờ lỗi Mốt</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__list-post__item">
-                                            <a href="#" class="sidebar__list-post__img">
-                                                <img src="assets/images/ban-da-lavabo.jpg" alt="">
-                                            </a>
-                                            <div class="sidebar__list-post__title">
-                                                <a href="#">20+ Mẫu bàn đá lavabo – chậu rửa mặt bàn đá không bao giờ lỗi Mốt</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="sidebar__list-post__item">
-                                            <a href="#" class="sidebar__list-post__img">
-                                                <img src="assets/images/ban-da-lavabo.jpg" alt="">
-                                            </a>
-                                            <div class="sidebar__list-post__title">
-                                                <a href="#">20+ Mẫu bàn đá lavabo – chậu rửa mặt bàn đá không bao giờ lỗi Mốt</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
                         </aside>
                     </div>
                 </div>
@@ -124,12 +95,6 @@
         </section>
     </main>
 
-
-    <!-- Jquery -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/bootstrap/bootstrap.min.js"></script>
-    <!-- Carousel-->
-    <script src="assets/carousel/flickity.pkgd.min.js"></script>
-</body>
-</html>
+<?php
+    include 'footer.php';
+?>
